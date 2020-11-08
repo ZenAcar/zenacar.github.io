@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<title>Zen Acar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/style.css">
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small">
+                <i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ZEN
+                <span class="w3-hide-small">ACAR</span>
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT ME</h3>
+        <p class="w3-center">
+            <em>I am a Data Analyst living in Austin, TX</em>
+        </p>
+        <p>Strategic, multidisciplinary Data Analyst with an eye for innovation and analytical perfection. Proactively perfecting my skill sets and deepening my experience with tools like VBA, Python, SQL, HTML, CSS, Mango, JavaScript, D3.js, Tableau, and
+            AWS. A firm believer who focuses on APIs, Web Charting, Social Analytic, Web Scraping, and Machine Learning. Combining my expertise and applied engineering background in such areas to deliver the best creative data visualizations with perfect
+            approximation algorithms. Adept experience collecting, cleaning, analyzing, and making meaningful stories out of the data with the best tools available. </p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <br>
+                <img src="https://github.com/ZenAcar/zenacar.github.io/blob/master/images/SF.png?raw=true" class="w3-round w3-image " alt="Photo of Me" width="500" height="333">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p> Welcome to my portfolio. A young professional here with a passion to learn! My name is Zen Acar and I am a Full-Stack Data Analyst from Austin area. I am a recent graduate of the University of Texas at Austin Data Analytics and Visualization
+                    Program. I have a Bachelor's Degree in Engineering, and I am interested in data analysis and object-oriented programming. I pride myself on my ability to solve problems and I love taking on new challenges. I hope to continue my growth
+                    as a programmer/data miner and would like to reach a point of proficiency with any computer language.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">7+</span>
+                <br> Certifications
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">25+</span>
+                <br> Projects Done
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">55+</span>s
+                <br> Accomplishments
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">4+</span>
+                <br> Cooding Years
+            </div>
+        </div> -->
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-black w3-wide">PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">SOME OF MY WORK</h3>
+        <p class="w3-center">
+            <em>Here are some of my latest projects and accomplishments.
+                <br> Click on the images to get them!</em>
+        </p>
+        <br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <a href="https://github.com/ZenAcar/Automated_News_Sentiment_Categorization_MachineLearning_Methods" target="_blank">
+                    <img src="https://github.com/ZenAcar/zenacar.github.io/blob/master/images/news-sentiment-categorization.png?raw=true" style="width:120%" onclick="onClick(this)" class="w3-hover-opacity" alt="ML">
+                </a>
+            </div>
+
+            <div class="w3-col m3">
+                <a href="https://github.com/ZenAcar/US-Unemployment-Dashboard" target="_blank">
+                    <img src="https://github.com/ZenAcar/zenacar.github.io/blob/master/images/us-unemployment-dashboard.png?raw=true" style="width:60%" onclick="onClick(this)" class="w3-hover-opacity" alt="JavaScript">
+                </a>
+
+            </div>
+
+            <div class="w3-col m3">
+                <a href="https://github.com/ZenAcar/AirPollution-Analysis-ETLProject" target="_blank">
+                    <img src="https://github.com/ZenAcar/zenacar.github.io/blob/master/images/ETL.png?raw=true" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="ETL">
+                </a>
+
+            </div>
+
+            <div class="w3-col m3">
+                <a href="https://github.com/ZenAcar/VBA-Stock-Market-Analysis" target="_blank">
+                    <img src="https://github.com/ZenAcar/zenacar.github.io/blob/master/images/stockmarket.jpg?raw=true" style="width:90%" onclick="onClick(this)" class="w3-hover-opacity" alt="VBA-Excel">
+                </a>
+
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <a href="https://github.com/ZenAcar/USGS-Earthquake-Visualization" target="_blank">
+                    <img src="https://github.com/ZenAcar/zenacar.github.io/blob/master/images/recent-earthquakes.png?raw=true" style="width:110%" onclick="onClick(this)" class="w3-hover-opacity" alt="Leaflet">
+                </a>
+
+            </div>
+
+            <div class="w3-col m3">
+                <a href="https://github.com/ZenAcar/SQLalchemy-Vacation-Planning-with-Climate-Analysis" target="_blank">
+                    <img src="https://github.com/ZenAcar/zenacar.github.io/blob/master/images/sqlalchemy.png?raw=true" style="width:80%" onclick="onClick(this)" class="w3-hover-opacity" alt="SQLalchemy">
+                </a>
+
+            </div>
+
+            <div class="w3-col m3">
+                <a href="https://public.tableau.com/profile/zennure.ozbek.acar#!/vizhome/CitiBikeAnalysis_/CityBikeStoryboard" target="_blank">
+                    <img src="https://github.com/ZenAcar/zenacar.github.io/blob/master/images/CityBike%20Storyboard.png?raw=true" style="width:80%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tableau">
+                </a>
+
+            </div>
+
+            <div class="w3-col m3">
+                <a href="https://github.com/ZenAcar/APIs-Weather-Analysis" target="_blank">
+                    <img src="https://github.com/ZenAcar/zenacar.github.io/blob/master/images/NH_lat_vs_temp.png?raw=true" style="width:110%" onclick="onClick(this)" class="w3-hover-opacity" alt="API">
+                </a>
+
+            </div>
+            <a href="https://github.com/ZenAcar" target="_blank">
+                <button class="w3-button w3-padding-large w3-light-grey load-center boxhead-load" style="margin-top:70px">SEE MORE</button>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image">
+            <i class="fa fa-remove"></i>
+        </span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-black w3-wide">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">Quick, send me a message!
+        </h3>
+        <p class="w3-center">
+            <em>I'm very friendly.</em>
+        </p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Austin, TX
+                    <br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1-512-705-4406
+                    <br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: zennureozbek@gmail.com
+                    <br>
+                </div>
+
+                <!-- <p>Swing by for a cup of
+                    <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form> -->
+            </div>
+        </div>
+
+        <div class="w3-row w3-center w3-padding-min w3-section ">
+            <a href="#home" class="w3-button w3-light-grey">
+                <i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer navbar-expand-lg navbar-dark text-center">
+        <div class="footer-copyright">
+            <div class="w3-xlarge w3-section boxhead">
+
+                <a href="https://github.com/ZenAcar" target="_blank">
+                    <i class="fa fa-github w3-hover-opacity"></i>
+                    <br>
+                    <!-- </a>
+                <a href="https://twitter.com/drilldata " target="_blank">
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                </a> -->
+                    <a href="https://www.linkedin.com/in/zenacar/" target="_blank">
+                        <i class="fa fa-linkedin w3-hover-opacity"></i>
+                    </a>
+            </div>
+            <p style="font-size:large">Copyright © Zen Acar 2020</p>
+
+        </div>
+        </div>
+    </footer>
+</body>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</html>
